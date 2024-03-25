@@ -1,11 +1,11 @@
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background: #bde8bc;
-  color: #001f3f;
+  color: #333333;
 }
 
 h1,h2,h3,h4 {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Times New Roman', Times, Serif;
 }
 
 .container {
@@ -172,4 +172,8 @@ hr {
   height:14%;
   left: 50%;
   position: absolute;
- }
+}
+
+.music{
+  text-align: center;
+}

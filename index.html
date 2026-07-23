@@ -7,128 +7,129 @@
   <meta name="description" content="데이터에서 서비스까지 만드는 AI 개발자 강민성의 포트폴리오" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,500i&family=Inter:wght@400;500;600&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="topbar-inner">
-      <span class="wordmark">MINSEONG KANG</span>
+    <div class="container topbar-inner">
+      <span class="wordmark">Minseong Kang</span>
       <nav class="topnav">
-        <a href="#projects">PROJECTS</a>
-        <a href="#awards">AWARDS</a>
-        <a class="cta" href="https://github.com/cajsf" target="_blank" rel="noopener">GITHUB</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#awards">수상·수료</a>
+        <a class="cta" href="https://github.com/cajsf" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <p class="label">AI DEVELOPER · SEJONG UNIV. AI (2021 ~ )</p>
-          <h1>데이터에서<br />서비스까지 만드는<br />AI 개발자 강민성</h1>
-          <p class="hero-sub">크롤링으로 데이터를 모으고, DB를 설계하고, 모델을 학습시켜, 웹 서비스로 배포하는 전 과정을 직접 구현합니다.</p>
-          <div class="hero-cta">
-            <a class="btn-primary" href="https://github.com/cajsf" target="_blank" rel="noopener">GitHub 보기</a>
-            <a class="btn-secondary" href="#projects">프로젝트</a>
-          </div>
+      <div class="container hero-inner">
+        <p class="eyebrow">AI DEVELOPER · SEJONG UNIV.</p>
+        <h1>데이터에서 서비스까지<br />만드는 개발자, 강민성</h1>
+        <p class="hero-sub">
+          크롤링으로 데이터를 모으고, DB를 설계하고, 모델을 학습시켜,<br class="wide-only" />
+          웹 서비스로 배포하는 전 과정을 직접 구현합니다.
+        </p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="https://github.com/cajsf" target="_blank" rel="noopener">GitHub 보기</a>
+          <a class="btn-secondary" href="#projects">프로젝트 둘러보기</a>
         </div>
-        <div class="hero-right">
-          <ul class="pills">
-            <li>PyTorch</li><li>YOLO</li><li>FastAPI</li><li>Django</li>
-            <li>Flask</li><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li>
-            <li>Docker</li><li>R · Quarto</li><li>Web Crawling</li><li>OCR</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="container stat-row">
-        <div class="stat"><span class="stat-num">9</span><span class="label">PROJECTS</span></div>
-        <div class="stat"><span class="stat-num">571</span><span class="label">YOLO CLASSES TRAINED</span></div>
-        <div class="stat"><span class="stat-num">1,152</span><span class="label">PRODUCTS CRAWLED</span></div>
-        <div class="stat"><span class="stat-num">700+</span><span class="label">TESTS PASSING (ERP)</span></div>
+        <svg class="hero-doodle" viewBox="0 0 120 90" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 62 Q17 30 22 27 Q60 22 96 26 Q101 28 100 61 Q100 64 96 64 Q60 67 23 64 Q18 64 18 62 Z" />
+          <path d="M12 70 Q60 74 107 70 Q110 74 104 76 Q60 80 15 76 Q9 74 12 70 Z" />
+          <path d="M34 38 L44 45 L34 52" stroke="#4f4dc4" />
+          <path d="M50 53 L64 53" stroke="#4f4dc4" />
+          <path d="M104 18 Q106 13 109 10 M110 22 Q114 20 118 20 M99 12 Q100 8 99 4" stroke="#e8a87c" />
+        </svg>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <p class="label">SELECTED WORK</p>
+        <p class="eyebrow">SELECTED WORK</p>
         <h2>프로젝트</h2>
         <div class="card-grid">
 
           <a class="card" href="https://github.com/yg2127/OcclusionGateNet" target="_blank" rel="noopener">
-            <p class="label card-label accent">CAPSTONE · 우수상 수상</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 Q7.5 5.5 12 5.5 Q16.5 5.5 21 12 Q16.5 18.5 12 18.5 Q7.5 18.5 3 12 Z"/><circle cx="12" cy="12" r="3" stroke="#4f4dc4"/><path d="M5 4 L8 7 M19 4 L16 7" stroke="#e8a87c"/></svg>
+            <p class="card-tag highlight">캡스톤 · 우수상 수상</p>
             <h3>OcclusionGateNet</h3>
-            <p>얼굴 차폐·야간에도 강건한 운전자 모니터링 시스템. 랜드마크 복원 + 차폐 인지 동적 융합, 실차 데모 완성.</p>
-            <ul class="pills small"><li>PyTorch</li><li>CV</li><li>YOLO-Pose</li></ul>
+            <p>얼굴 차폐·야간에도 강건한 운전자 모니터링 시스템. 랜드마크 복원과 차폐 인지 동적 융합, 실차 데모까지.</p>
+            <p class="card-meta">PyTorch · Computer Vision · YOLO-Pose</p>
           </a>
 
           <a class="card" href="https://github.com/jin040907/LawDict" target="_blank" rel="noopener">
-            <p class="label card-label">INTERNSHIP · TEAM</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 L12 20 M8 20 L16 20"/><path d="M5 8 L19 8"/><path d="M5 8 L3 13 Q5 15 7 13 Z" stroke="#4f4dc4"/><path d="M19 8 L17 13 Q19 15 21 13 Z" stroke="#4f4dc4"/></svg>
+            <p class="card-tag">현장실습 · 팀</p>
             <h3>LawDict</h3>
-            <p>AI 기반 입법 분석 플랫폼. CatBoost 법안 처리 예측 + GPT 리포트·챗봇 + pgvector 유사 법안 검색.</p>
-            <ul class="pills small"><li>FastAPI</li><li>CatBoost</li><li>PostgreSQL</li></ul>
+            <p>AI 기반 입법 분석 플랫폼. CatBoost 법안 처리 예측과 GPT 분석 리포트·챗봇, 유사 법안 검색.</p>
+            <p class="card-meta">FastAPI · CatBoost · PostgreSQL</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/ERP-program" target="_blank" rel="noopener">
-            <p class="label card-label">IN PROGRESS</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8 L12 4 L20 8 L20 16 L12 20 L4 16 Z"/><path d="M4 8 L12 12 L20 8 M12 12 L12 20" stroke="#4f4dc4"/></svg>
+            <p class="card-tag">개인 · 진행 중</p>
             <h3>식자재 유통 ERP</h3>
-            <p>실제 사업장에 도입할 실무용 ERP. 서비스 계층 설계, 재고 원장 기반 정합성 관리, 테스트 700개+.</p>
-            <ul class="pills small"><li>Django</li><li>PostgreSQL</li><li>Docker</li></ul>
+            <p>실제 사업장에 도입할 실무용 ERP 웹앱. 서비스 계층 설계와 재고 원장 기반 정합성 관리.</p>
+            <p class="card-meta">Django · PostgreSQL · Docker</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/allercheck" target="_blank" rel="noopener">
-            <p class="label card-label">AI SERVICE</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8 Q4 6.5 5.5 6.5 L8 6.5 L9.5 4.5 L14.5 4.5 L16 6.5 L18.5 6.5 Q20 6.5 20 8 L20 17 Q20 18.5 18.5 18.5 L5.5 18.5 Q4 18.5 4 17 Z"/><circle cx="12" cy="12.5" r="3.5" stroke="#4f4dc4"/></svg>
+            <p class="card-tag">AI 서비스</p>
             <h3>AllerCheck</h3>
-            <p>사진 한 장으로 알레르기 위험을 판단하는 AI 웹서비스. YOLO v8 학습 + Gemini 하이브리드 추론.</p>
-            <ul class="pills small"><li>YOLOv8</li><li>FastAPI</li><li>Docker</li></ul>
+            <p>사진 한 장으로 알레르기 위험을 판단하는 AI 웹서비스. YOLO v8 학습과 Gemini 하이브리드 추론.</p>
+            <p class="card-meta">YOLOv8 · FastAPI · Docker</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/Food_Allergy_Detect_Project" target="_blank" rel="noopener">
-            <p class="label card-label">DATABASE</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.5"/><path d="M5 6 L5 18 Q5 20.5 12 20.5 Q19 20.5 19 18 L19 6"/><path d="M5 12 Q5 14.5 12 14.5 Q19 14.5 19 12" stroke="#4f4dc4"/></svg>
+            <p class="card-tag">데이터베이스</p>
             <h3>식품 알레르기 정보 시스템</h3>
-            <p>웹 크롤링 + OCR로 제품 1,152개 데이터를 직접 구축하고 3NF로 설계한 DB 프로젝트. AllerCheck의 전신.</p>
-            <ul class="pills small"><li>MySQL</li><li>Crawling</li><li>OCR</li></ul>
+            <p>웹 크롤링과 OCR로 제품 1,152개 데이터를 직접 구축하고 3NF로 설계한 DB 프로젝트.</p>
+            <p class="card-meta">MySQL · Crawling · OCR</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/live-captions" target="_blank" rel="noopener">
-            <p class="label card-label">REALTIME</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9.5" y="4" width="5" height="9" rx="2.5"/><path d="M6 11 Q6 15.5 12 15.5 Q18 15.5 18 11" stroke="#4f4dc4"/><path d="M12 15.5 L12 19 M9 19 L15 19"/></svg>
+            <p class="card-tag">실시간 처리</p>
             <h3>live-captions</h3>
-            <p>리턴제로 STT API 기반 실시간 방송 자막 웹 데모. 마이크 라이브 자막 + 영상 동기 자막.</p>
-            <ul class="pills small"><li>Python</li><li>WebSocket</li><li>STT</li></ul>
+            <p>리턴제로 STT API 기반 실시간 방송 자막 웹 데모. 마이크 라이브 자막과 영상 동기 자막.</p>
+            <p class="card-meta">Python · WebSocket · STT</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/spider" target="_blank" rel="noopener">
-            <p class="label card-label">TEAM</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17 L9 6 Q9 5 10 5 L18 4 Q19 4 19 5 L19 15"/><ellipse cx="7" cy="17" rx="2.5" ry="2" stroke="#4f4dc4"/><ellipse cx="17" cy="15" rx="2.5" ry="2" stroke="#4f4dc4"/></svg>
+            <p class="card-tag">웹 · 팀</p>
             <h3>Spider Web Player</h3>
-            <p>플랫폼 독립적인 플레이리스트 공유 SNS. Shazam 음원 인식·OCR로 곡 추가.</p>
-            <ul class="pills small"><li>Flask</li><li>MongoDB</li><li>YouTube API</li></ul>
+            <p>플랫폼 독립적인 플레이리스트 공유 SNS. Shazam 음원 인식과 OCR로 곡을 편하게 추가.</p>
+            <p class="card-meta">Flask · MongoDB · YouTube API</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/eda-dashboard" target="_blank" rel="noopener">
-            <p class="label card-label accent">LIVE DEMO</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4 L4 20 L20 20"/><path d="M7 15 L11 10 L14 13 L19 6" stroke="#4f4dc4"/><circle cx="19" cy="6" r="1" stroke="#e8a87c"/></svg>
+            <p class="card-tag highlight">라이브 데모</p>
             <h3>Gapminder EDA</h3>
-            <p>인구가중 통계·수렴 분석 기반 심화 EDA와 Quarto 대시보드. GitHub Pages 라이브 배포.</p>
-            <ul class="pills small"><li>R</li><li>tidyverse</li><li>Quarto</li></ul>
+            <p>인구가중 통계·수렴 분석 기반 심화 EDA와 Quarto 대시보드. GitHub Pages로 라이브 배포.</p>
+            <p class="card-meta">R · tidyverse · Quarto</p>
           </a>
 
           <a class="card" href="https://github.com/cajsf/smart-doorlock" target="_blank" rel="noopener">
-            <p class="label card-label">EMBEDDED</p>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#37352f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10 L8 7.5 Q8 3.5 12 3.5 Q16 3.5 16 7.5 L16 10"/><circle cx="12" cy="15" r="1.5" stroke="#4f4dc4"/></svg>
+            <p class="card-tag">임베디드</p>
             <h3>Smart Doorlock</h3>
-            <p>Shift 조합 입력·시도 제한을 구현한 아두이노 도어락. 케이스 3D 프린팅까지 직접 제작.</p>
-            <ul class="pills small"><li>Arduino</li><li>C++</li><li>SolidWorks</li></ul>
+            <p>Shift 조합 입력과 시도 제한을 구현한 아두이노 도어락. 케이스 3D 프린팅까지 직접 제작.</p>
+            <p class="card-meta">Arduino · C++ · SolidWorks</p>
           </a>
 
         </div>
       </div>
     </section>
 
-    <section id="awards" class="section">
+    <section id="awards" class="section section-wash">
       <div class="container">
-        <p class="label">RECOGNITION</p>
+        <p class="eyebrow">RECOGNITION</p>
         <h2>수상 · 수료</h2>
         <div class="cert-grid">
           <figure class="cert">
@@ -156,37 +157,34 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span class="wordmark">MINSEONG KANG</span>
+      <span class="wordmark">Minseong Kang</span>
       <nav class="footer-links">
         <a href="https://github.com/cajsf" target="_blank" rel="noopener">GitHub</a>
         <a href="https://cajsf.github.io/eda-dashboard/" target="_blank" rel="noopener">Live Demo</a>
         <a href="#projects">Projects</a>
       </nav>
-    </div>
-    <div class="container footer-meta">
-      <p>© 2026 Minseong Kang</p>
+      <p class="footer-meta">© 2026 Minseong Kang</p>
     </div>
   </footer>
 
   <script>
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      const stats = document.querySelectorAll(".stat");
-      stats.forEach((el, i) => { el.style.opacity = 0; el.style.transform = "translateY(8px)"; });
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            const i = [...stats].indexOf(e.target);
-            setTimeout(() => {
-              e.target.style.transition = "opacity 220ms ease-out, transform 220ms ease-out";
-              e.target.style.opacity = 1;
-              e.target.style.transform = "translateY(0)";
-            }, i * 40);
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.3 });
-      stats.forEach((el) => io.observe(el));
-    }
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const sections = document.querySelectorAll(".section");
+    sections.forEach((el) => {
+      el.style.opacity = 0;
+      if (!reduced) el.style.transform = "translateY(16px)";
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.style.transition = "opacity 280ms ease-out, transform 280ms ease-out";
+          e.target.style.opacity = 1;
+          e.target.style.transform = "none";
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    sections.forEach((el) => io.observe(el));
   </script>
 </body>
 </html>

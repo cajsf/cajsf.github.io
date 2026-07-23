@@ -1,113 +1,192 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Welcome to my website!</title>
-        <link type="text/css" rel="stylesheet" href="style.css" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap"
-            rel="stylesheet"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="intro">
-                <!-- you can replace with your own profile picture -->
-                <!-- or use random portrait image here: https://source.unsplash.com/100x100/?portrait -->
-                <img class="profile-picture" src="images/profile.png" />
-                <h1>Kang min seong</h1>
-                <h3>Web and AI Developer at My Company</h3>
-                <p>{{ Seize the day}}</p>
-            </div>
-            <hr />
-            <div class="about-grid">
-                <div class="i-am">
-                    <h3>I am</h3>
-                    <ul class="about-list">
-                        <li>A Sejong univ. student</li>
-                        <li>A Korean</li>
-                        <li>23 years old</li>
-                    </ul>
-                </div>
-                <div class="v-line"></div>
-                <div class="i-like">
-                    <h3>I like to</h3>
-                    <ul class="about-list">
-                        <li>Watching Netfilx</li>
-                        <li>Play piano</li>
-                        <li>Eat Ice-cream</li>
-                    </ul>
-                </div>
-            </div>
-            <hr />
-            <div class="projects-heading">
-                <h3>My Projects</h3>
-                <div class="projects-grid">
-                    <!-- you can replace with your own projects images -->
-                    <!-- or use random image here: https://source.unsplash.com/random/300x300/?img=1 -->
-                    <img class="project-image" src="images/project-1.png" />
-                    <img class="project-image" src="images/project-2.png" />
-                    <img class="project-image" src="images/project-3.png" />
-                    <img class="project-image" src="images/project-4.png" />
-                </div>
-            </div>
-            <hr />
-            <div class="links-and-contact">
-                <div class="links">
-                    <h3>Links</h3>
-                    <ul class="links-list">
-                        <li>
-                            <a href="https://github.com/" target="_blank">Github</a>
-                            <img class="logo-image" src="images/github.png" />
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank">Twitter</a>
-                            <img class="logo-image" src="images/twitter.png" />
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com" target="_blank">Linkedin</a>
-                            <img class="logo-image" src="images/linkedin.png" />
-                        </li>
-                        <li>
-                            <a href="https://youtube.com/" target="_blank">Youtube</a>
-                            <img class="logo-image" src="images/youtube.png" />
-                        </li>
-                    </ul>
-                </div>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>강민성 | AI Developer Portfolio</title>
+  <meta name="description" content="데이터에서 서비스까지 만드는 AI 개발자 강민성의 포트폴리오" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="wordmark">MINSEONG KANG</span>
+      <nav class="topnav">
+        <a href="#projects">PROJECTS</a>
+        <a href="#awards">AWARDS</a>
+        <a class="cta" href="https://github.com/cajsf" target="_blank" rel="noopener">GITHUB</a>
+      </nav>
+    </div>
+  </header>
 
-                <div>
-                    <form action="#">
-                        <label for="email">
-                            Email:
-                            <input type="email" id="email" placeholder="Enter your email" />
-                        </label>
-                        <label for="message">
-                            Message: <textarea id="message">Your Message</textarea>
-                        </label>
-                        <input
-                            type="submit"
-                            class="submit-button-wrapper"
-                            valid="Send Message"
-                        />
-                    </form>
-                </div>
-            </div>
-            <hr/>
-            <div class="music">
-                <iframe src="I_stan_U.mp4" allow="autoplay" id="audio"></iframe>
-            </div>
-            <hr/>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.957922784457!2d126.97703027116394!3d37.57960849732558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1711367555186!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="label">AI DEVELOPER · SEJONG UNIV. AI (2021 ~ )</p>
+          <h1>데이터에서<br />서비스까지 만드는<br />AI 개발자 강민성</h1>
+          <p class="hero-sub">크롤링으로 데이터를 모으고, DB를 설계하고, 모델을 학습시켜, 웹 서비스로 배포하는 전 과정을 직접 구현합니다.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="https://github.com/cajsf" target="_blank" rel="noopener">GitHub 보기</a>
+            <a class="btn-secondary" href="#projects">프로젝트</a>
+          </div>
         </div>
-    </body>
+        <div class="hero-right">
+          <ul class="pills">
+            <li>PyTorch</li><li>YOLO</li><li>FastAPI</li><li>Django</li>
+            <li>Flask</li><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li>
+            <li>Docker</li><li>R · Quarto</li><li>Web Crawling</li><li>OCR</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stat-row">
+        <div class="stat"><span class="stat-num">9</span><span class="label">PROJECTS</span></div>
+        <div class="stat"><span class="stat-num">571</span><span class="label">YOLO CLASSES TRAINED</span></div>
+        <div class="stat"><span class="stat-num">1,152</span><span class="label">PRODUCTS CRAWLED</span></div>
+        <div class="stat"><span class="stat-num">700+</span><span class="label">TESTS PASSING (ERP)</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="label">SELECTED WORK</p>
+        <h2>프로젝트</h2>
+        <div class="card-grid">
+
+          <a class="card" href="https://github.com/yg2127/OcclusionGateNet" target="_blank" rel="noopener">
+            <p class="label card-label accent">CAPSTONE · 우수상 수상</p>
+            <h3>OcclusionGateNet</h3>
+            <p>얼굴 차폐·야간에도 강건한 운전자 모니터링 시스템. 랜드마크 복원 + 차폐 인지 동적 융합, 실차 데모 완성.</p>
+            <ul class="pills small"><li>PyTorch</li><li>CV</li><li>YOLO-Pose</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/jin040907/LawDict" target="_blank" rel="noopener">
+            <p class="label card-label">INTERNSHIP · TEAM</p>
+            <h3>LawDict</h3>
+            <p>AI 기반 입법 분석 플랫폼. CatBoost 법안 처리 예측 + GPT 리포트·챗봇 + pgvector 유사 법안 검색.</p>
+            <ul class="pills small"><li>FastAPI</li><li>CatBoost</li><li>PostgreSQL</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/ERP-program" target="_blank" rel="noopener">
+            <p class="label card-label">IN PROGRESS</p>
+            <h3>식자재 유통 ERP</h3>
+            <p>실제 사업장에 도입할 실무용 ERP. 서비스 계층 설계, 재고 원장 기반 정합성 관리, 테스트 700개+.</p>
+            <ul class="pills small"><li>Django</li><li>PostgreSQL</li><li>Docker</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/allercheck" target="_blank" rel="noopener">
+            <p class="label card-label">AI SERVICE</p>
+            <h3>AllerCheck</h3>
+            <p>사진 한 장으로 알레르기 위험을 판단하는 AI 웹서비스. YOLO v8 학습 + Gemini 하이브리드 추론.</p>
+            <ul class="pills small"><li>YOLOv8</li><li>FastAPI</li><li>Docker</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/Food_Allergy_Detect_Project" target="_blank" rel="noopener">
+            <p class="label card-label">DATABASE</p>
+            <h3>식품 알레르기 정보 시스템</h3>
+            <p>웹 크롤링 + OCR로 제품 1,152개 데이터를 직접 구축하고 3NF로 설계한 DB 프로젝트. AllerCheck의 전신.</p>
+            <ul class="pills small"><li>MySQL</li><li>Crawling</li><li>OCR</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/live-captions" target="_blank" rel="noopener">
+            <p class="label card-label">REALTIME</p>
+            <h3>live-captions</h3>
+            <p>리턴제로 STT API 기반 실시간 방송 자막 웹 데모. 마이크 라이브 자막 + 영상 동기 자막.</p>
+            <ul class="pills small"><li>Python</li><li>WebSocket</li><li>STT</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/spider" target="_blank" rel="noopener">
+            <p class="label card-label">TEAM</p>
+            <h3>Spider Web Player</h3>
+            <p>플랫폼 독립적인 플레이리스트 공유 SNS. Shazam 음원 인식·OCR로 곡 추가.</p>
+            <ul class="pills small"><li>Flask</li><li>MongoDB</li><li>YouTube API</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/eda-dashboard" target="_blank" rel="noopener">
+            <p class="label card-label accent">LIVE DEMO</p>
+            <h3>Gapminder EDA</h3>
+            <p>인구가중 통계·수렴 분석 기반 심화 EDA와 Quarto 대시보드. GitHub Pages 라이브 배포.</p>
+            <ul class="pills small"><li>R</li><li>tidyverse</li><li>Quarto</li></ul>
+          </a>
+
+          <a class="card" href="https://github.com/cajsf/smart-doorlock" target="_blank" rel="noopener">
+            <p class="label card-label">EMBEDDED</p>
+            <h3>Smart Doorlock</h3>
+            <p>Shift 조합 입력·시도 제한을 구현한 아두이노 도어락. 케이스 3D 프린팅까지 직접 제작.</p>
+            <ul class="pills small"><li>Arduino</li><li>C++</li><li>SolidWorks</li></ul>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <p class="label">RECOGNITION</p>
+        <h2>수상 · 수료</h2>
+        <div class="cert-grid">
+          <figure class="cert">
+            <a href="assets/certs/creative-design-award.png" target="_blank" rel="noopener">
+              <img src="assets/certs/creative-design-award.png" alt="세종대학교 제21회 창의설계경진대회 우수상 상장" loading="lazy" />
+            </a>
+            <figcaption>
+              <strong>제21회 창의설계경진대회 우수상</strong>
+              <span>세종대학교 소프트웨어중심대학사업단 · 2026.06 · 팀 스꾸삐</span>
+            </figcaption>
+          </figure>
+          <figure class="cert">
+            <a href="assets/certs/software-carpentry.png" target="_blank" rel="noopener">
+              <img src="assets/certs/software-carpentry.png" alt="Software Carpentry Certificate of Achievement" loading="lazy" />
+            </a>
+            <figcaption>
+              <strong>Software Carpentry Certificate</strong>
+              <span>The Carpentries · 2026.06</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="wordmark">MINSEONG KANG</span>
+      <nav class="footer-links">
+        <a href="https://github.com/cajsf" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://cajsf.github.io/eda-dashboard/" target="_blank" rel="noopener">Live Demo</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+    <div class="container footer-meta">
+      <p>© 2026 Minseong Kang</p>
+    </div>
+  </footer>
+
+  <script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const stats = document.querySelectorAll(".stat");
+      stats.forEach((el, i) => { el.style.opacity = 0; el.style.transform = "translateY(8px)"; });
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            const i = [...stats].indexOf(e.target);
+            setTimeout(() => {
+              e.target.style.transition = "opacity 220ms ease-out, transform 220ms ease-out";
+              e.target.style.opacity = 1;
+              e.target.style.transform = "translateY(0)";
+            }, i * 40);
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      stats.forEach((el) => io.observe(el));
+    }
+  </script>
+</body>
 </html>

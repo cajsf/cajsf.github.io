@@ -168,7 +168,15 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.2; margin-bottom: 2.5
   transition: transform 220ms ease-out, box-shadow 220ms ease-out;
 }
 .cert:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
-.cert img { width: 100%; display: block; border-bottom: 1px solid var(--border); }
+.cert img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--surface-warm);
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
 .cert figcaption { padding: 16px 20px; display: flex; flex-direction: column; gap: 0.2rem; }
 .cert figcaption strong { font-size: 0.9375rem; font-weight: 600; }
 .cert figcaption span { font-size: 0.8125rem; color: var(--muted); }
